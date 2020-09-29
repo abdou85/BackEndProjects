@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace APICollection.Models
 {
+    public class Collection
+    {
+        public Pagination Pagination { get; set; }
+        public List<Release> Releases { get; set; }
+    }
     public class Pagination
     {
         [JsonPropertyName("page")]

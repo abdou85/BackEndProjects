@@ -19,6 +19,8 @@ namespace APICollection.Models
 
         [JsonPropertyName("rating")]
         public int Rating { get; set; }
-        
+
+        public BasicInformation BasicInformation { get; set; }
+
     }
 }
