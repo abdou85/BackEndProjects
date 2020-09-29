@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json.Serialization;
@@ -11,13 +12,14 @@ namespace APICollection.Models
         [JsonPropertyName("id")]
         public long Id { get; set; }
 
-        [JsonPropertyName("instance_id")]
+        [JsonProperty(PropertyName = "instance_id")]
         public long InstanceId { get; set; }
 
-        [JsonPropertyName("date_added")]
+        
+        [JsonProperty(PropertyName = "date_added")]
         public DateTime DateAdded { get; set; }
 
-        [JsonPropertyName("rating")]
+        [JsonProperty(PropertyName = "rating")]
         public int Rating { get; set; }
 
         public BasicInformation BasicInformation { get; set; }

@@ -16,7 +16,7 @@ namespace APICollection.Controllers
     {
         [HttpGet]
         //[Route("api/controller/{nombre}")]
-        public ActionResult<List<Release>> Collection(int nombre)
+        public ActionResult<ReponseCollection> Collection(int nombre)
         {
             Collection model = null;
             var client = new HttpClient();
@@ -33,19 +33,22 @@ namespace APICollection.Controllers
 
               });
             task.Wait();
-            //var perPage = model.Pagination.PerPage;
-            //var page = perPage * nombre;
-            return model.Releases.ToList();
+            var perPage = model.Pagination.PerPage;
+            var page = perPage * nombre;
+            var reponseCollection = ReponseCollection(model);
+            return reponseCollection;
 
 
         }
 
-        private static Release Release(Release release) =>
-        new Release
+      
+
+        private static ReponseCollection ReponseCollection(Collection collection) =>
+        new ReponseCollection
         {
-            Id = release.Id,
-            InstanceId = release.InstanceId,
-            DateAdded = release.DateAdded
+            Pagination = collection.Pagination,
+            Releases = collection.Releases,
+            NombreArticles = collection.NombreArticles
         };
 
     }

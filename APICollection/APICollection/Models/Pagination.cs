@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json.Serialization;
@@ -10,6 +12,8 @@ namespace APICollection.Models
     {
         public Pagination Pagination { get; set; }
         public List<Release> Releases { get; set; }
+
+        public int NombreArticles { get; set; }
     }
     public class Pagination
     {
@@ -19,7 +23,7 @@ namespace APICollection.Models
         [JsonPropertyName("pages")]
         public int Pages { get; set; }
 
-        [JsonPropertyName("per_page")]
+        [JsonProperty(PropertyName = "per_page")]
         public int PerPage { get; set; }
 
         [JsonPropertyName("items")]
