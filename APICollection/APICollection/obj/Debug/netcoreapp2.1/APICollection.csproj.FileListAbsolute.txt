@@ -3,7 +3,6 @@ C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\
 C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\bin\Debug\netcoreapp2.1\APICollection.runtimeconfig.dev.json
 C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\bin\Debug\netcoreapp2.1\APICollection.dll
 C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\bin\Debug\netcoreapp2.1\APICollection.pdb
-C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\obj\Debug\netcoreapp2.1\APICollection.csprojAssemblyReference.cache
 C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\obj\Debug\netcoreapp2.1\APICollection.csproj.CoreCompileInputs.cache
 C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\obj\Debug\netcoreapp2.1\APICollection.RazorAssemblyInfo.cache
 C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\obj\Debug\netcoreapp2.1\APICollection.RazorAssemblyInfo.cs

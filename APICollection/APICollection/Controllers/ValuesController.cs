@@ -1,11 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Net.Http;
-using System.Threading.Tasks;
+﻿using System.Net.Http;
 using APICollection.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Json;
 using System.Net.Http.Headers;
-using System.Linq;
 using Newtonsoft.Json;
 
 namespace APICollection.Controllers
@@ -14,8 +10,12 @@ namespace APICollection.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public ValuesController()
+        {
+
+        }
+
         [HttpGet]
-        //[Route("api/controller/{nombre}")]
         public ActionResult<ReponseCollection> Collection(int nombre)
         {
             Collection model = null;
@@ -37,8 +37,6 @@ namespace APICollection.Controllers
             var page = perPage * nombre;
             var reponseCollection = ReponseCollection(model);
             return reponseCollection;
-
-
         }
 
       
@@ -46,7 +44,6 @@ namespace APICollection.Controllers
         private static ReponseCollection ReponseCollection(Collection collection) =>
         new ReponseCollection
         {
-            Pagination = collection.Pagination,
             Releases = collection.Releases,
             NombreArticles = collection.NombreArticles
         };
