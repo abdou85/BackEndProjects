@@ -7,7 +7,7 @@ namespace APICollection.Models
     public class Collection
     {
         public Pagination Pagination { get; set; }
-        public List<Release> Releases { get; set; }
+        public IEnumerable<Release> Releases { get; set; }
 
         public int NombreArticles { get; set; }
     }

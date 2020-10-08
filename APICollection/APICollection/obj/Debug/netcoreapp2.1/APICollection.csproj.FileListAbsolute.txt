@@ -15,3 +15,4 @@ C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\
 C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\obj\Debug\netcoreapp2.1\APICollection.genruntimeconfig.cache
+C:\Users\abdel\source\repos\abdou85\BackEndProjects\APICollection\APICollection\obj\Debug\netcoreapp2.1\APICollection.csprojAssemblyReference.cache

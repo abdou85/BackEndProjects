@@ -4,7 +4,7 @@ namespace APICollection.Models
 {
     public class ReponseCollection
     {
-        public List<Release> Releases { get; set; }
+        public IEnumerable<Release> Releases { get; set; }
 
         public int NombreArticles { get; set; }
     }
